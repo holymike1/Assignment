@@ -97,3 +97,12 @@ button:hover span:after {
   opacity: 1;
   right: 0;
 }
+
+<style>
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+

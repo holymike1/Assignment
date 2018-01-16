@@ -54,9 +54,13 @@ body
 		font-family: 'Helvetica Neue', sans-serif;
 	}
 	
-	ol{ 
+	ol { 
 		font-family: 'Helvetica Neue', sans-serif;
 	
+	}
+	
+	.highlight {
+		background-color: #da63ff;
 	}
 	
 	button {

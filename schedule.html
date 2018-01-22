@@ -9,13 +9,13 @@
 </head>		
 	<body>
 <button class="button" style="vertical-align:middle"
-onclick="myFunction()"> Display Date and Time </button>
-<p id="demo"></p>
+onclick="document.getElementById('date').innerHTML = Date()"> Display Date and Time </button>
+<p id="date"></p>
 
-	<table width="95%" align="center" >
+	<table id="myTable" width="95%" align="center" >
 	<div id="head_nav">
 	<thead>
-	  <tr>
+	  <tr class="header">
 		<th> Periods and Times </th>		
         <th> Day 1 </th>
         <th> Day 2 </th>
@@ -154,10 +154,33 @@ onclick="myFunction()"> Display Date and Time </button>
   </table>
 		<form id="bean">
 			<input type="text" placeholder="Search Classes">
-			<input type="Submit">
+			<input id="search" type="Submit">
 		</form>
 		<script>
-		document.getElementById("demo").style.color = "#7f4455";
+		var d = 'Date';
+		switch (d) {
+		case 'Date':
+		document.getElementById("date").style.color = "#7f4455";
+		break;
+		default:
+		console.log('time machine broke');
+		}
+		
+		var classes = 'Science';
+		switch (classes) {
+		case 'Math':
+		console.log('Math is gr8.');
+		break;
+		case 'Music':
+		console.log('Music blows.');
+		break;
+		case 'Science':
+		console.log('Science is interesting.');
+		break;
+		default:
+    console.log('Sorry, no classes 4 u' + classes + '.');
+	}
+		var b = document.getElementById("bean");
 		</script>
 		
 	<h2> <a href="https://media1.tenor.com/images/fb3f2d1e814190100a4ae401b1660d5b/tenor.gif?itemid=6081931"> NS Math </a> </h2>

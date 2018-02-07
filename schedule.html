@@ -23,7 +23,7 @@ onclick="document.getElementById('date').innerHTML = Date()"> Display Date and T
 		<th> Day 4 </th>
 		<th> Day 5 </th>
 		<th> Day 6 </th>
-		<th> Day <br> 7 </th>
+		<th> Day 7 </th>
 		<th> Day 8 </th>
 		<th> Day A1 </th>
 		<th> Day A3 </th>
@@ -107,7 +107,7 @@ onclick="document.getElementById('date').innerHTML = Date()"> Display Date and T
       <tr>
         <th>Period 4 </br>
 		12:30 P.M.-1:00 P.M.</br> </th>
-        <td class = "Comp.Prog." ><a href="https://www.codecademy.com" style="display:block;"> Comp.Prog.</a></td>
+        <td class = "CP" ><a href="https://www.codecademy.com" style="display:block;"> Comp.Prog.</a></td>
         <td class = "History" ><a href="https://www.missedinhistory.com/" style="display:block;">History</td>
 		<td class = "Homeroom">Homeroom</td>
 		<td class = "Speech">Speech</td>
@@ -166,46 +166,46 @@ onclick="document.getElementById('date').innerHTML = Date()"> Display Date and T
 		console.log('time machine broke');
 		}
 		
-		var classes = 'Science';
-		switch (classes) {
+	var searchClass;
+		function highlightingStyle()
+			switch (searchClass) {
 		case 'Math':
-		console.log('Math is gr8.');
-		break;
+			searchClass = 'Math';
+				break;
 		case 'Music':
-		console.log('Music blows.');
-		break;
+			searchClass = 'Music';
+				break;
 		case 'Science':
-		console.log('Science is interesting.');
-		break;
+			searchClass = 'Science';
+				break;
 		case 'Gym':
-		console.log('Fun fun fun');
-		break;
+			searchClass = 'Gym';
+				break;
 		case 'Religion':
-		console.log('The holy jebus');
-		break;
+			searchClass = 'Religion';
+				break;
 		case 'CP':
-		console.log('Breaking the 4th wall are you?');
-		break;
+			searchClass = 'CP';
+				break;
 		case 'English':
-		console.log('Von-Tiki');
-		break;
+			searchClass = 'English';
+				break;
 		case 'French':
-		console.log('Monet would be proud');
-		break;
+			searchClass = 'French';
+				break;
 		case 'Speech':
-		console.log('Speak thy children');
-		break;
+			searchClass = 'French';
+				break;
 		case 'Advisors':
-		console.log('A-Team meetup');
-		break;
+			searchClass = 'Advisors';
+				break;
 		case 'LA':
-		console.log('Assembly day');
-		break;
+			searchClass = 'LA';
+				break;
 		default:
-    console.log('Sorry, no classes 4 u' + classes + '.');
+    console.log('Sorry, no classes 4 u' + '.');
 		}
 		
-		var b = document.getElementById("bean");
 		
 		</script>
 		

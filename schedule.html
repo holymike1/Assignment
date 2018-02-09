@@ -166,8 +166,8 @@ onclick="document.getElementById('date').innerHTML = Date()"> Display Date and T
 		console.log('time machine broke');
 		}
 		
-	var searchClass;
-		function highlightingStyle()
+	var searchClass = 'Math';
+		function highlightingStyle(){
 			switch (searchClass) {
 		case 'Math':
 			searchClass = 'Math';
@@ -203,9 +203,13 @@ onclick="document.getElementById('date').innerHTML = Date()"> Display Date and T
 			searchClass = 'LA';
 				break;
 		default:
-    console.log('Sorry, no classes 4 u' + '.');
+    console.log('Sorry, no classes 4 u.');
 		}
-		
+		}
+		var className = getElementsByClassName(searchClass);
+		for (i=0, i<className.length; i++) {
+			className[i] .value.style: "Blue" 
+				}
 		
 		</script>
 		

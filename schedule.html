@@ -128,7 +128,7 @@ onclick="document.getElementById('date').innerHTML = Date()"> Display Date and T
 		<td class = "Religion"> <a href="https://static1.fjcdn.com/comments/The+power+of+christ+compels+you+_fca5d4c97f37ab8ddcc532bb380dcb04.jpg" style="display:block;"> Religion </td>
 		<td class = "Math"> <a href="https://media1.tenor.com/images/fb3f2d1e814190100a4ae401b1660d5b/tenor.gif?itemid=6081931"> NS Math </a> </td>
 		<td class = "Math"> <a href="https://media1.tenor.com/images/fb3f2d1e814190100a4ae401b1660d5b/tenor.gif?itemid=6081931"> NS Math </a> </td>
-		<td class = "Math"> <a href="https://i.ytimg.com/vi/RwcfDoblW64/maxresdefault.jpg" style="display:block;"> Music </td>
+		<td class = "Music"> <a href="https://i.ytimg.com/vi/RwcfDoblW64/maxresdefault.jpg" style="display:block;"> Music </td>
 		<td class = "History"> <a href="https://www.missedinhistory.com/" style="display:block;">History </td>
 		<td class = "History"> <a href="https://www.missedinhistory.com/" style="display:block;">History </td>
 		<td class = "French"> <a href="http://www.alloprof.qc.ca/" style="display:block;"> French </td> 
@@ -143,8 +143,8 @@ onclick="document.getElementById('date').innerHTML = Date()"> Display Date and T
 		<td class = "Science"> <a href="https://images-cdn.9gag.com/photo/a9dN4e1_700b.jpg" style="display:block;"> Science </td>
 		<td class = "English"> <a href="http://vweb.loyola.ca/ketterling/" style="display:block;"> English </td> 
 		<td class = "English"> <a href="http://vweb.loyola.ca/ketterling/" style="display:block;"> English </td> 
-		<td class = "Music"> <a href="https://media1.tenor.com/images/fb3f2d1e814190100a4ae401b1660d5b/tenor.gif?itemid=6081931"> NS Math </a> </td>
-		<td class = "Math"> <a href="https://i.ytimg.com/vi/RwcfDoblW64/maxresdefault.jpg" style="display:block;"> Music </td>
+		<td class = "Math"> <a href="https://media1.tenor.com/images/fb3f2d1e814190100a4ae401b1660d5b/tenor.gif?itemid=6081931"> NS Math </a> </td>
+		<td class = "Music"> <a href="https://i.ytimg.com/vi/RwcfDoblW64/maxresdefault.jpg" style="display:block;"> Music </td>
 		<td class = "Science"> <a href="https://images-cdn.9gag.com/photo/a9dN4e1_700b.jpg" style="display:block;"> Science </td>
 		<td class = "Science"> <a href="https://images-cdn.9gag.com/photo/a9dN4e1_700b.jpg" style="display:block;"> Science </td>
 		<td class = "Science"> <a href="https://images-cdn.9gag.com/photo/a9dN4e1_700b.jpg" style="display:block;"> Science </td>
@@ -152,65 +152,65 @@ onclick="document.getElementById('date').innerHTML = Date()"> Display Date and T
       </tr>
 	</thead>
   </table>
-		<form id="bean">
-			<input type="text" placeholder="Search Classes">
-			<input id="search" type="Submit">
-		</form>
+			<input id="searchClass" type="text" placeholder="Search Classes">
+			<input onclick="highlightingStyle()" id="search" type="Submit">
 		<script>
 		var d = 'Date';
 		switch (d) {
-		case 'Date':
-		document.getElementById("date").style.color = "#7f4455";
-		break;
-		default:
-		console.log('time machine broke');
+			case 'Date':
+				document.getElementById("date").style.color = "#7f4455";
+				break;
+			default:
+				console.log('time machine broke');
 		}
 		
-	var searchClass = 'Math';
-		function highlightingStyle(){
-			switch (searchClass) {
-		case 'Math':
-			searchClass = 'Math';
-				break;
-		case 'Music':
-			searchClass = 'Music';
-				break;
-		case 'Science':
-			searchClass = 'Science';
-				break;
-		case 'Gym':
-			searchClass = 'Gym';
-				break;
-		case 'Religion':
-			searchClass = 'Religion';
-				break;
-		case 'CP':
-			searchClass = 'CP';
-				break;
-		case 'English':
-			searchClass = 'English';
-				break;
-		case 'French':
-			searchClass = 'French';
-				break;
-		case 'Speech':
-			searchClass = 'French';
-				break;
-		case 'Advisors':
-			searchClass = 'Advisors';
-				break;
-		case 'LA':
-			searchClass = 'LA';
-				break;
-		default:
-    console.log('Sorry, no classes 4 u.');
-		}
-		}
-		var className = getElementsByClassName(searchClass);
-		for (i=0, i<className.length; i++) {
-			className[i] .value.style: "Blue" 
+		var searchClass;
+			function highlightingStyle(){
+				var classPicked = document.getElementById("searchClass").value;
+				switch (classPicked) {
+					case 'Math':
+						searchClass = 'Math';
+						break;
+					case 'Music':
+						searchClass = 'Music';
+						break;
+					case 'Science':
+						searchClass = 'Science';
+						break;
+					case 'Gym':
+						searchClass = 'Gym';
+						break;
+					case 'Religion':
+						searchClass = 'Religion';
+						break;
+					case 'CP':
+						searchClass = 'CP';
+						break;
+					case 'English':
+						searchClass = 'English';
+						break;
+					case 'French':
+						searchClass = 'French';
+						break;
+					case 'Speech':
+						searchClass = 'French';
+						break;
+					case 'Advisors':
+						searchClass = 'Advisors';
+						break;
+					case 'LA':
+						searchClass = 'LA';
+						break;
+					default:
+						console.log('Sorry, no classes 4 u.');
 				}
-		
+				var classChoice = document.getElementsByClassName(searchClass);
+				for (i=0; i<classChoice.length; i++) {
+					classChoice[i].style.backgroundColor = "#ff82ea" 
+				}
+			}
+			
+			
 		</script>
 		
 	<h2> <a href="https://media1.tenor.com/images/fb3f2d1e814190100a4ae401b1660d5b/tenor.gif?itemid=6081931"> NS Math </a> </h2>
